@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+
+<body>
+    <script>
+        const nama = {
+            firstName: "Dinar",
+            middleName: "Nur",
+            lastName: "Aziz",
+            fullName: undefined
+        }
+        if ("firstName" in nama) {
+            alert(`Hello ${nama.firstName}`)
+        } else {
+            alert("Hello")
+        }
+
+        if ("fullName" in nama) {
+            document.write("Ada")
+        } else {
+            document.write("Tidak Ada")
+        }
+
+        const name = [null, "Dinar"]
+        if (0 in name) {
+            document.write("Ada")
+        } else {
+            document.write("Tidak Ada")
+
+        }
+    </script>
+</body>
+
+</html>
