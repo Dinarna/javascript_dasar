@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masalah Variable Var</title>
+</head>
+
+<body>
+    <script>
+        let index = 20
+
+        for (let index = 0; index < 10; index++) {
+            console.info(`Local ${index}`)
+        }
+        console.info(`Global ${index}`)
+
+
+        var index1 = 20
+
+        for (var index1 = 0; index1 < 10; index1++) {
+            console.info(`Local ${index1}`)
+        }
+        console.info(`Global ${index1}`)
+    </script>
+</body>
+
+</html>
